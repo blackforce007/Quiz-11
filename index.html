@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Black Force 007 — Quiz Game</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Black Force 007 — Quiz Game</h1>
+    <p>সামাজিক জ্ঞান, মানুষ মানুষকে বুঝতে শিখবে</p>
+  </header>
+
+  <section id="start-screen" class="active">
+    <button id="start-btn" class="btn">স্টার্ট</button>
+    <div class="settings">
+      <label>টাইমার (সেকেন্ড): 
+        <select id="timer-select">
+          <option value="15">15</option>
+          <option value="30" selected>30</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <section id="quiz-screen" class="hidden">
+    <div class="quiz-header">
+      <div id="question-number"></div>
+      <div id="timer">⏰ <span id="time-left"></span>s</div>
+      <div id="score">? 0</div>
+    </div>
+    <h2 id="question-text"></h2>
+    <ul id="choices-list"></ul>
+    <div id="feedback"></div>
+    <div id="question-navigator"></div>
+  </section>
+
+  <section id="result-screen" class="hidden">
+    <h2>তোমার ফলাফল</h2>
+    <p id="final-score"></p>
+    <p id="best-score"></p>
+    <button id="restart-btn" class="btn">আবার শুরু কর</button>
+    <button id="share-btn" class="btn">ফলাফল শেয়ার করো</button>
+    <h3>লিডারবোর্ড (সর্বোচ্চ স্কোর)</h3>
+    <ul id="leaderboard"></ul>
+  </section>
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+          </html>
+      
